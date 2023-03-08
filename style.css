@@ -1,7 +1,10 @@
-
 /* Contact us form start  */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+/* border radius 10/5px
+mobile view to contact us form
+
+*/
 header {
     height: 50px;
     width: 50%;
@@ -32,8 +35,323 @@ header {
 
 body {
     background: #CDE3EB;
+    
+    min-height: 100vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+/*ABOUT US  START*/
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #CDE3EB;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+}
+
+.image-section img {
+    width: 100%;
+    height:70%;
+}
+
+.content-section .title {
+    
+    font-size: 28px;
+    color: #143A52;
+    text-align: center;
+}
+
+.content-section .content h3 {
+    margin-top: 20px;
+    color: #143A52;
+    font-size: 19px;
+}
+
+.content-section .content p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-section .content .button {
+    margin-top: 30px;
+    
+}
+
+.content-section .content .button a {
+    background-color: #143A52;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #E3EFF3;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+}
+
+.content-section .content .button a:hover {
+    background-color: #0b212f;
+    color: #E3EFF3;
+}
+
+.content-section .social {
+    margin: 40px 0px;
+}
+
+.content-section .social i {
+    color: #6E828A;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.content-section .social i:hover {
+    color: #143A52;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+
+
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .content .button {
+        text-align: center;
+    }
+
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+
+    .content-section .social {
+        text-align: center;
+    }
+}
+
+/* ABOUT US END */
+
+/* SERVICE STARTS */
+
+.wrapper {
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
+
+.wrapper h1 {
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #143A52;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card {
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #143A52;
+    margin: 10px 4px;
+    color: #E3EFF3;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card i {
+    margin: 20px;
+    color: #CDE3EB;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card p {
+    color: #6c575d;
+
+    text-align: center;
+}
+
+.card:hover i,
+.card p {
+    color: #fff;
+}
+
+.card:hover h2 {
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.card:nth-child(1):hover {
+    background: linear-gradient(45deg,
+            rgb(6, 17, 24) 0%,
+            rgb(26, 76, 107) 100%),
+        url('images/demo.jpg');
+
+    background-size: cover;
+}
+
+.card:nth-child(2):hover {
+    background: linear-gradient(45deg,
+            rgb(6, 17, 24) 0%,
+            rgb(26, 76, 107) 100%),
+        url('images/img2.jpeg');
+
+    background-size: cover;
+}
+
+.card:nth-child(3):hover {
+    background: linear-gradient(45deg,
+            rgb(6, 17, 24) 0%,
+            rgb(26, 76, 107) 100%),
+        url('images/img3.jpeg');
+
+    background-size: cover;
+}
+
+.card:nth-child(4):hover {
+    background: linear-gradient(45deg,
+            rgb(6, 17, 24) 0%,
+            rgb(26, 76, 107) 100%),
+        url('images/img4.jpeg');
+
+    background-size: cover;
+}
+
+.card:nth-child(5):hover {
+    background: linear-gradient(45deg,
+            rgb(6, 17, 24) 0%,
+            rgb(26, 76, 107) 100%),
+        url('images/img5.jpeg');
+
+    background-size: cover;
+}
+
+.card:nth-child(6):hover {
+    background: linear-gradient(45deg,
+            rgb(6, 17, 24) 0%,
+            rgb(26, 76, 107) 100%),
+        url('images/img1.jpeg');
+
+    background-size: cover;
+}
+
+@media(max-width: 991px) {
+
+    .wrapper{
+        padding: 25px;
+    }
+
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+
+/*SERVICE ENDS */
+
+
+/* FOOTER STARTS */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    min-height: 100px;
+    background: #143A52;
+    color: #E3EFF3;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+footer p {
+    color: #E3EFF3;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+
+}
+
+
+/* FOOTER ENDS */
+
 
 .contactUs {
     position: relative;
@@ -64,12 +382,14 @@ body {
 
 .map {
     grid-area: map;
+    
 }
 
 .contact {
     padding: 40px;
     background: #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 }
 
 .box {
@@ -95,11 +415,13 @@ body {
 .formBox {
     position: relative;
     width: 100%;
+    
 }
 
 .formBox .row50 {
     display: flex;
     gap: 20px
+    
 }
 
 .inputBox {
@@ -107,7 +429,7 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
-
+    
 }
 
 .formBox .row100 .inputBox {
@@ -128,6 +450,7 @@ body {
     font-size: 1.1em;
     outline: none;
     border: 1px solid #143A52;
+    border-radius: 5px;
 }
 
 .inputBox textarea {
@@ -138,6 +461,7 @@ body {
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .inputBox input[type="submit"] {
@@ -149,6 +473,7 @@ body {
     font-weight: 500;
     cursor: pointer;
     padding: 14px 15px;
+    border-radius: 10px;
 }
 
 .inputBox ::placeholder {
@@ -157,7 +482,7 @@ body {
 
 .info {
     background: #143A52;
-
+    border-radius: 5px;
 }
 
 .info h3 {
@@ -204,23 +529,32 @@ body {
     margin-right: 15px;
 }
 
-.sci li a{
+.sci li a {
     color: #6E828A;
     font-size: 2em;
-    
+
 }
 
-.sci li a:hover{
+.sci li a:hover {
     color: #143A52;
 }
 
-.map{
+.map {
     padding: 0;
 }
 
-.map iframe{
+.map iframe {
     width: 100%;
+    border-radius: 5px;
     height: 100%;
 }
 
+
+
 /* contact us form end */
+
+
+/* MEDIA QUERY FOR VIEW IN DIFFRERENT RESOLUTION LIKE MOBILE TABLEY,ETC */
+
+
+@media(max-width: 786px) {}
