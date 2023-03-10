@@ -35,87 +35,165 @@ header {
 
 body {
     background: #CDE3EB;
-    
+    font-family: 'Poppins', sans-serif;
+
     min-height: 100vh;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
 /* TEAM SECTION START */
-.main{
+
+.service-title {
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+
+
+.service-title h1 {
+
+    font-size: 3em;
+    /* margin-top: 25px; */
+    text-align: center;
+    font-weight: 600;
+    color: #143A52;
+
+}
+
+
+
+
+
+.caption a {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #143A52;
+    padding: 7px 7px;
+    text-decoration: none;
+    color: #E3EFF3;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+}
+
+.caption a:hover {
+    background-color: #0b212f;
+    color: #E3EFF3;
+}
+
+.main {
     width: 100%;
+    margin-top: -190px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0c52a1;
-  }
-  .profile-card{
+    background-color: #CDE3EB;
+}
+
+.main1 {
+    width: 100%;
+    margin-top: -420px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDE3EB;
+}
+
+.profile-card {
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
     background: #fff;
     padding: 30px;
     border-radius: 50%;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
-    margin: 0 25px;
-  }
-  .profile-card:hover{
+    margin: 0 0 0 25px;
+   
+}
+
+.profile-card:hover {
     border-radius: 10px;
-    height: 260px;
-  }
-  .profile-card .img{
+    height: 250px;
+}
+
+.profile-card .img {
     position: relative;
     width: 100%;
     height: 100%;
     transition: .6s;
     z-index: 99;
-  }
-  .profile-card:hover .img{
+}
+
+.profile-card:hover .img {
     transform: translateY(-60px);
-  }
-  .img img{
+}
+
+.img img {
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
-  }
-  .profile-card:hover img{
+}
+
+.profile-card:hover img {
     border-radius: 10px;
-  }
-  .caption{
+}
+
+.caption {
+    font-family: 'Poppins', sans-serif;
+
+   
     text-align: center;
-    transform: translateY(-80px);
+    transform: translateY(-60px);
     opacity: 0;
     transition: .6s;
-  }
-  .profile-card:hover .caption{
+}
+
+.profile-card:hover .caption {
     opacity: 1;
-  }
-  .caption h3{
-    font-size: 21px;
-  }
-  .caption p{
+}
+
+.caption h3 {
     font-size: 16px;
-    color: #0c52a1;
+    margin-top: 5px;
+}
+
+.caption p {
+    font-size: 16px;
+    color: #143A52;
     margin: 2px 0 9px 0;
-  }
-  .caption .social-links a{
-    color: #333;
+}
+
+.caption .social-links a {
+    color: #143A52;
     margin-right: 8px;
     font-size: 21px;
     transition: .6s;
-  }
-  .social-links a:hover{
-    color: #0c52a1;
-  }
-  
+}
+
+.social-links a:hover {
+    color: #6E828A;
+}
+
 
 /* TEAM SECTION ENDS */
 
 /*ABOUT US  START*/
+
+
+
 .section {
+    font-family: 'Poppins', sans-serif;
+
     width: 100%;
     min-height: 100vh;
     background-color: #CDE3EB;
@@ -125,7 +203,7 @@ body {
     width: 80%;
     display: block;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .content-section {
@@ -140,18 +218,27 @@ body {
 
 .image-section img {
     width: 100%;
-    height:70%;
+    height: 70%;
 }
 
-.content-section .title {
+.title {
+    font-family: 'Poppins', sans-serif;
+
+    position: relative;
+    width: 100%;
+    padding: 10px 0px;
     
-    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 2em;
+
     color: #143A52;
-    text-align: center;
+
 }
 
 .content-section .content h3 {
-    margin-top: 20px;
+    margin-top: 0px;
     color: #143A52;
     font-size: 19px;
 }
@@ -165,7 +252,7 @@ body {
 
 .content-section .content .button {
     margin-top: 30px;
-    
+
 }
 
 .content-section .content .button a {
@@ -251,17 +338,22 @@ body {
 /* SERVICE STARTS */
 
 .wrapper {
-    font-family: 'raleway';
-    display: flex;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    min-height: 100px;
+
+    padding: 20px 250px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    font-size: 13px;
 
 }
 
 .wrapper h1 {
-    font-size: 3em;
-    margin: 25px 0;
+    font-size: 4em;
+    margin-top: 0px;
+    margin-bottom: 120px;
     text-align: center;
     font-weight: 600;
     color: #143A52;
@@ -276,8 +368,8 @@ body {
 }
 
 .card {
-    min-height: 220px;
-    width: 320px;
+    min-height: 420px;
+    width: 420px;
     padding: 30px;
     border-radius: 5px;
     display: flex;
@@ -291,20 +383,23 @@ body {
     transition: 0.3s;
 }
 
-.card i {
-    margin: 20px;
-    color: #CDE3EB;
+.card .social a {
+    
+    margin: 10px;
+    font-size: 2.5em;
+    color: #E3EFF3;
 }
 
 .card h2 {
     margin-bottom: 12px;
     font-weight: 400;
     text-align: center;
+    font-size: 25px;
 }
 
 .card p {
     color: #6c575d;
-
+    font-size: 15px;
     text-align: center;
 }
 
@@ -318,7 +413,7 @@ body {
     color: #f2f2f2;
 }
 
-.card:nth-child(1):hover {
+ .card:nth-child(1):hover {
     background: linear-gradient(45deg,
             rgb(6, 17, 24) 0%,
             rgb(26, 76, 107) 100%),
@@ -335,7 +430,7 @@ body {
 
     background-size: cover;
 }
-
+/*
 .card:nth-child(3):hover {
     background: linear-gradient(45deg,
             rgb(6, 17, 24) 0%,
@@ -370,25 +465,25 @@ body {
         url('images/img1.jpeg');
 
     background-size: cover;
-}
+} */
 
 @media(max-width: 991px) {
 
-    .wrapper{
+    .wrapper {
         padding: 25px;
     }
 
-    .wrapper h1{
+    .wrapper h1 {
         font-size: 2.5em;
         font-weight: 600;
     }
 
-    .content-box{
+    .content-box {
         flex-direction: column;
         width: 100%;
     }
 
-    .card{
+    .card {
         min-width: 300px;
         margin: 10px auto;
     }
@@ -454,7 +549,7 @@ footer p {
 
 .map {
     grid-area: map;
-    
+
 }
 
 .contact {
@@ -487,13 +582,12 @@ footer p {
 .formBox {
     position: relative;
     width: 100%;
-    
+
 }
 
 .formBox .row50 {
     display: flex;
     gap: 20px
-    
 }
 
 .inputBox {
@@ -501,7 +595,7 @@ footer p {
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
-    
+
 }
 
 .formBox .row100 .inputBox {
