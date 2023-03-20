@@ -16,52 +16,81 @@
 <body>
 
     <!-- slideshow start -->
-    <!-- <header>
-        <div id="logo">Colon<a id="logo-s">Code</a></div>
-        <span class="sign"><a class="act" href="#">SIGN UP</a></span>
-        <span class="sign"><a href="#">SIGN IN</a></span>
-    </header> -->
-
-    <!-- <div class="slider">
-        <div class="myslder">
-            <div class="text">
-                <h1>IMAGE 1</h1>
-                <p>Web Dev<br>
-            </div>
-            <img src="images/img1.jpeg" style="width: 50%; height: 50%;">
-
-        </div>
-        <div class="myslder">
-            <div class="text">
-                <h1>IMAGE 2</h1>
-                <p>Web Dev<br>
-            </div>
-            <img src="images/img2.jpeg" style="width: 50%; height: 50%;">
-
-        </div>
-        <div class="myslder">
-            <div class="text">
-                <h1>IMAGE 3</h1>
-                <p>Web Dev<br>
-            </div>
-            <img src="images/img3.jpeg" style="width: 50%; height: 50%;">
-
-        </div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-
-        <div class="dotsbox" style="text-align: center;"></div>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div> -->
+    <section id="home">
+    <header>
+		<div id="logo">Tech-Con<span id="logo-s">Consulting</span></div>
+		<!-- <span class="sign"><a class="act" href="#">Home</a></span> -->
+        <span class="sign"><a href="#contact">Contact</a></span>
+        <span class="sign"><a href="#services">Services</a></span>
+        <span class="sign"><a href="#about">About</a></span>
+        <span class="sign"><a href="#home">Home</a></span>
+        
+        <!-- <span class="sign"><a href="#">About</a></span> -->
+	</header>
+	
+    <div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Welcome to Tech-Con</h1>
+				<p>Civil Engineers &<br>Project Management Consultants</p>
+			</div>
+			<img class="simg" src="images/img5.jpeg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>IMAGE 2</h1>
+				<p>Civil Engineers &<br>Project Management Consultants</p>
+			</div>
+			<img class="simg" src="images/img2.jpeg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>BOB employees “Arunoday Chs Ltd”</h1>
+				<p>Civil Engineers &<br>Project Management Consultants</p>
+			</div>
+			<img class="simg" src="images/img6.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>IMAGE 4</h1>
+				<p>Civil Engineers &<br>Project Management Consultants</p>
+			</div>
+			<img class="simg" src="images/img7.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>IMAGE 5</h1>
+				<p>Civil Engineers &<br>Project Management Consultants</p>
+			</div>
+			<img class="simg" src="images/img4.jpeg" style="width: 100%; height: 100%;">
+		</div>
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
+    <script src="jsfile.js"></script>
+    </section>
     <!-- slideshow end -->
 
 
     <!-- about us section start-->
-    <section>
+    <section id="about">
 
         <div class="title">
             <h2>About Us</h2>
@@ -116,7 +145,7 @@
 
     <!-- team  start-->
 
-    <section>
+    <section id="team">
         <div class="wrapper">
             <h1>Team Members</h1>
             <!-- <p>content</p> -->
@@ -188,7 +217,7 @@
     <!-- teams end-->
 
     <!-- service  SECTION START-->
-    <section>
+    <section id="services">
         <div class="service-title">
             <h1>Services We Provide</h1>
         </div>
@@ -344,7 +373,7 @@
     <!-- service  SECTION ENDS-->
 
     <!-- Contact us form start -->
-    <section>
+    <section id="contact">
         <div class="contactUs">
             <div class="title">
                 <h2>Get In Touch</h2>
@@ -354,7 +383,7 @@
                 <div class="contact form">
                     <h3>Send a Message</h3>
                     <form action="https://formsubmit.co/manjrekarsritika0901@gmail.com" method="POST">
-                         <input type="hidden" name="_template" value="table"> 
+                        <!-- <input type="hidden" name="_template" value="table"> -->
                         <div class="formBox">
                             <div class="row50">
                                 <div class="inputBox">
@@ -421,8 +450,7 @@
                     <div class="infoBox">
                         <div>
                             <span><ion-icon name="location"></ion-icon></span>
-                            <p>Unit No. 51, First Floor, Durgadevi Ekta Commercial premises, Rajendra Nagar, Borivali -
-                                East, Mumbai - 400 066</p>
+                            <p>221, C-16, Audumbar Chs, RSC Rd no.36, Gorai-2, Borivali West, Mumbai-400091</p>
                         </div>
 
                         <div>
@@ -435,25 +463,18 @@
                             <a href="mailto:surverajesh@rediffmail.com">surverajesh@rediffmail.com</a>
                         </div>
 
+     
                         <div>
-                            <span><ion-icon name="mail"></ion-icon></span>
-                            <a href="mailto:rajesh@techcon.org.in">rajesh@techcon.org.in</a>
-                        </div>
-
-                        <!-- <div>
                             <span><ion-icon name="call"></ion-icon></span>
                             <a href="tel:+91 845 209 1480">+91 845 209 1480</a>
-                        </div> -->
+                        </div>
 
                         <div>
                             <span><ion-icon name="call"></ion-icon></span>
                             <a href="tel:+91 981 954 8420">+91 981 954 8420</a>
                         </div>
 
-                        <div>
-                            <span><ion-icon name="call"></ion-icon></span>
-                            <a href="tel:022 64400619">022 64400619</a>
-                        </div>
+                        
 
 
 
