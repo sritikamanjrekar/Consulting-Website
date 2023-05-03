@@ -156,12 +156,12 @@ header {
 }
 
 .txt h1{
-	color: #143A52; /* blue */
+	color: #fff; /* blue */
 	font-size: 50px;
 	margin-bottom: 20px;
 }
 .txt p{
-    color: #143A52;
+    color: #fff;
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -390,7 +390,7 @@ body {
 
 .caption p {
     font-size: 16px;
-    color: #143A52;
+    color: #6E828A;
     margin: 2px 0 9px 0;
 }
 
@@ -446,8 +446,8 @@ body {
     font-family: 'Poppins', sans-serif;
     position: relative;
     width: 100%;
-    padding: 10px 0px;
-    margin-top: 80px;
+    /* padding: 10px 0px;
+    margin-top: 80px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -572,7 +572,7 @@ font-size: 2em;
 
 .wrapper h1 {
     font-size: 4em;
-    margin-top: -130px;
+    margin-top: -100px;
     margin-bottom: 120px;
     text-align: center;
     font-weight: 600;
